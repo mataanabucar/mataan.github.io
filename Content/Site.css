@@ -1,0 +1,48 @@
+﻿body {
+    --padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+@font-face {
+    font-family: 'Biry';
+    src: url('../Fonts/Biryani-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Dosis';
+    src: url('../Fonts/Dosis-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Josef';
+    src: url('../Fonts/JosefinSlab-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Work';
+    src: url('../Fonts/WorkSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Yan';
+    src: url('../Fonts/Yantramanav-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'WorkThin';
+    src: url('../Fonts/WorkSans-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'YanThin';
+    src: url('../Fonts/Yantramanav-Thin.ttf') format('truetype');
+}
+

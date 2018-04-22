@@ -1,1 +1,210 @@
-Hello World
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/Mataan.css" rel="stylesheet" />
+    <link href="/Content/Site.css" rel="stylesheet" />
+    <link href="/Content/FontAwesome/CSS/fontawesome-all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Content/Main.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/jquery.validate.js"></script>
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+    <script src="/Scripts/respond.js"></script>
+
+
+<style>
+.clockdate-wrapper {
+    /* background-color: #333; */
+    /* padding:25px; */
+    /* max-width:350px; */
+    width:100%;
+    text-align:center;
+    /* border-radius:5px; */
+    margin:0 auto;
+}
+#clock{
+    /* background-color:#333; */
+    font-family: 'YanThin';
+    font-size:30px;
+    text-shadow:0px 0px 1px #333;
+    color:#444;
+}
+#clock span {
+    color:#444;
+    text-shadow:0px 0px 1px #333;
+    font-size:30px;
+    position:relative;
+    /* top:-27px; */
+    /* left:-10px; */
+}
+#date {
+    margin-left: 15px;
+    letter-spacing:5px;
+    font-size:18px;
+    font-family:'YanThin';
+    color:#444;
+    text-shadow:0px 0px 1px #333;
+}
+.zfront{
+z-index: 1000;
+}
+.zback{
+z-index: 0;
+}
+</style>
+
+</head>
+
+
+<!-- FONTS-- YanThin  -  WorkThin  -  Yan  -   Work  -  Josef  -  Dosis   -   Biry * -->
+
+
+<body onload="startTime()" class="bgimg-1">
+    
+
+    <div class="container body-content ">
+<div id="maindiv" class="jumbotron mt-5" style="background-color: #e9ecef00;">
+    <div class="ml-3">
+        <div class="row" style="height: 75px;">
+            <h1 style="font-family:'YanThin'; font-size: 45pt;">Mataan J. Abucar</h1>
+               
+            <div id="iconBox" class="row ml-lg-5 ml-sm-0 matcont">
+                <div id="box1">
+                    <a href="#"><i class="mx-2 fab fa-git-square fa-4x"></i></a>
+                </div>
+                <div id="box2">
+                    <a href="#"><i class="mx-2 fab fa-linkedin fa-4x"></i></a>
+                </div>
+                <div id="box3">
+                    <a href="#"><i class="mx-2 fas fa-shopping-cart fa-4x"></i></a>
+                </div>
+                <div id="box4">
+                    <a href="#"><i class="mx-2 fas fa-address-card fa-4x"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div id="clockdate">
+                <div class="clockdate-wrapper row">
+                  <div id="clock"></div>
+                  <div id="date"></div>
+                </div>
+              </div>
+        <hr />
+        <div class="row">
+            <h4 id="yanthin" style="font-size: 25pt;">Full-Stack Delveloper</h4>
+            <p id="yanthin" class="w-auto" style="font-weight:600">
+                I am a highly motivated professional with a passion for the technology industry. Always looking to expand my own knowledge and contribute to a healthy team-based work environment,
+                I would like to use my programming skill-set as a junior developer to produce a quality product that benefits both your company and clients.
+            </p>
+        </div>
+    </div>
+
+        
+
+    <div class="row justify-content-center">
+
+        <table>
+            <thead>
+                <tr ><th >Languages</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>C#</td></tr>
+                <tr><td>SQL</td></tr>
+                <tr><td>HTML</td></tr>
+                <tr><td>CSS</td></tr>
+                <tr><td>Javascript(JQuery)</td></tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr><th>Frameworks</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>ASP.NET MVC 5</td></tr>
+                <tr><td>Bootstrap</td></tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr><th>IDE</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Visual Studio</td></tr>
+                <tr><td>Visual Studio Code</td></tr>
+                <tr><td>MSSMS</td></tr>
+                <tr><td>Chrome Dev Tools</td></tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr><th>Database</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>SQL Server</td></tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr><th>Source Control</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Git</td></tr>
+            </tbody>
+        </table>
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<script>
+    $("#iconBox i").stop().on("mouseenter", function () {
+        $(this).stop().animate({ "font-size": '100pt' });
+        
+    })
+    $("#iconBox i").stop().on("mouseleave", function () {
+        $(this).stop().animate({ "font-size": '50pt' });
+    })
+
+
+    $("#iconBox div").stop().on("mouseenter", function () {
+        $(this).siblings().stop().animate({ opacity: 0.4 });
+        $(this).removeClass("zback")
+        $(this).addClass("zfront")
+    })
+    $("#iconBox div").stop().on("mouseleave", function () {
+        $(this).siblings().stop().animate({ opacity: 1 });
+        $(this).removeClass("zfront")
+        $(this).addClass("zback")
+    })
+
+    $('table tr').each(function () {
+        $(this).find('th').first().addClass('first');
+        $(this).find('th').last().addClass('last');
+        $(this).find('td').first().addClass('first');
+        $(this).find('td').last().addClass('last');
+    });
+
+    $('table tr').first().addClass('row-first');
+    $('table tr').last().addClass('row-last');
+</script>
